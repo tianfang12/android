@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="活动开始前"
+        android:textAlignment="viewEnd"
+        android:gravity="end" />
+
+    <EditText
+        android:id="@+id/edit_alarm"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="5"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分钟提醒我" />
+
+    <Switch
+        android:id="@+id/switch_alarm"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:checked="true" />
+
+</LinearLayout>

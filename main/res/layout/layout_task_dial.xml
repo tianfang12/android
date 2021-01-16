@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            >
+            <TextView
+                android:text="@string/thing_name"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+            </TextView>
+            <EditText  android:layout_weight="1"
+                android:text=""
+                android:id="@+id/edit_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ></EditText>
+        </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="10dip">
+
+        <TextView
+            android:text="@string/thing_data"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="2021-01-01 08:00"></TextView>
+
+        <Button
+            android:id="@+id/btn_set_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="设置时间" />
+    </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="10dip">
+
+            <TextView
+                android:text="@string/thing_place"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+            </TextView>
+            <EditText
+                android:layout_weight="1"
+                android:text=""
+                android:id="@+id/edit_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="10dip">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:text="@string/thing_level"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+            </TextView>
+            <RadioGroup
+                android:layout_weight="1"
+                android:id="@+id/radio_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radio_button_high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="高级" />
+                <RadioButton
+                    android:id="@+id/radio_button_low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="低级" />
+            </RadioGroup>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

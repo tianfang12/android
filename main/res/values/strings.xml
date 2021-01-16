@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Things</string>
+    <string name="title_task">任务</string>
+    <string name="title_check">打卡</string>
+    <string name="title_alarm">闹铃</string>
+    <string name="title_count">统计</string>
+    <string name="thing_name">请输入事件名称：</string>
+    <string name="thing_data">请输入活动日期：</string>
+    <string name="thing_place">请输入活动地点：</string>
+    <string name="thing_level">请输入活动优先程度：</string>
+</resources>
